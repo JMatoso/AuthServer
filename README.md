@@ -7,9 +7,8 @@
 
 <h4>Json Web Token (JWT)</h4>
 <p>
-    O <a href="https://jwt.io/" target="_blank">JSON Web Token</a> é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia 
-    cujo payload contém o JSON que afirma algum número de declarações. Os tokens são assinados usando um segredo 
-    privado ou uma chave pública/privada.
+    The <a href="https://jwt.io/" target="_blank">JSON Web Token</a>  is an Internet standard for creating data with optional signature and/or 
+    encryption whose payload contains JSON that asserts some number of claims. Tokens are signed using a private secret or a public/private key.
 </p>
 
 <h4>Microsoft Identity</h4>
