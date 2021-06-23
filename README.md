@@ -5,6 +5,35 @@
 <p>Custom Logs using Serilog.</p>
 <p>Documented using Swagger UI.</p>
 
+<h4>Json Web Token (JWT)</h4>
+<p>
+    O <a href="https://jwt.io/" target="_blank">JSON Web Token</a> é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia 
+    cujo payload contém o JSON que afirma algum número de declarações. Os tokens são assinados usando um segredo 
+    privado ou uma chave pública/privada.
+</p>
+
+<h4>Microsoft Identity</h4>
+<p>
+    The <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/" target="_target">Microsoft Identity</a> platform helps you build applications
+    your users and customers can sign in to using their Microsoft identities or social accounts, and provide authorized access to your own APIs or 
+    Microsoft APIs like Microsoft Graph.
+</p>
+
+<h4>Microsoft SQL Server</h4>
+<p>
+    <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2019" target="_blank">Microsoft SQL Server</a> is a relational database management 
+    system developed by Sybase in partnership with Microsoft. 
+    This partnership lasted until 1994, with the release of the version for Windows NT and since then Microsoft maintains the maintenance of the product.
+</p>
+
+<h4>Swagger</h4>
+<p>
+    <a href="https://swagger.io/" target="_blank">Swagger</a> is an Interface Description Language for describing RESTful APIs expressed using JSON. 
+    <a href="https://swagger.io/" target="_blank">Swagger</a> is used together with a set of open-source software tools to design, build, document, 
+    and use RESTful web services. 
+    <a href="https://swagger.io/" target="_blank">Swagger</a> includes automated documentation, code generation, and test-case generation.
+</p>
+
 <h2>Tools</h2>
 <ul>
     <li>.NET 5.0+</li>
