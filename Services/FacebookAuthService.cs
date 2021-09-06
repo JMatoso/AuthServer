@@ -27,7 +27,7 @@ namespace jwt_identity_api.Services
 
         public async Task<FacebookUserInfoResult> GetUserInfoAsync(string accessToken)
         {
-            var formattedUrl = string.Format(TokenValidationUrl, accessToken, _facebookAuth.AppId, _facebookAuth.AppSecret);
+            var formattedUrl = string.Format(UserInfoUrl, accessToken);
             var result = await _httpClientFactory.CreateClient().GetAsync(formattedUrl);
 
             result.EnsureSuccessStatusCode();
@@ -39,7 +39,7 @@ namespace jwt_identity_api.Services
 
         public async Task<FacebookTokenValidationResult> ValidateAccessTokenAsync(string accessToken)
         {
-            var formattedUrl = string.Format(UserInfoUrl, accessToken);
+            var formattedUrl = string.Format(TokenValidationUrl, accessToken, _facebookAuth.AppId, _facebookAuth.AppSecret);
             var result = await _httpClientFactory.CreateClient().GetAsync(formattedUrl);
 
             result.EnsureSuccessStatusCode();

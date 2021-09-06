@@ -6,7 +6,7 @@ using System;
 using jwt_identity_api.Data.Repositories;
 using jwt_identity_api.DTO;
 
-namespace jwt_identity_api.Controllers
+namespace jwt_identity_api.Controllers.v1
 {
     /// <summary>
     /// Manage books.

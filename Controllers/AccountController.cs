@@ -10,13 +10,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace jwt_identity_api.Controllers
+namespace jwt_identity_api.Controllers.v1
 {
     /// <summary>
     /// Accounts Management and Authentication.
     /// </summary>
     [ApiController]
-    [Route("api/account")]
+    [Route("api/v1/account")]
     public class AccountController : ControllerBase
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
