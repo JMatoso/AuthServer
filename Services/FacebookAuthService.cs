@@ -1,7 +1,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
-using jwt_identity_api.Helpers;
 using jwt_identity_api.Models.Externals.Contracts;
+using jwt_identity_api.Options;
 using Newtonsoft.Json;
 
 namespace jwt_identity_api.Services
