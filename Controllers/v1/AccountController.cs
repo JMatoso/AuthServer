@@ -21,14 +21,15 @@ namespace jwt_identity_api.Controllers.v1
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IUserApp _user;
+        private readonly ITokenService _token;
 
         public AccountController(
             IUserApp user,
-            SignInManager<ApplicationUser> signInManager
-        )
+            SignInManager<ApplicationUser> signInManager, ITokenService token)
         {
             _user = user;
             _signInManager = signInManager;
+            _token = token;
         }
 
         /// <summary>
@@ -47,7 +48,7 @@ namespace jwt_identity_api.Controllers.v1
                 if (result.Succeeded)
                 {
                     var user = await _user.Get(model.Email);
-                    return TokenService.GenerateToken(user);
+                    return _token.GenerateToken(user);
                 }
                 else if(result.IsLockedOut)
                 {
