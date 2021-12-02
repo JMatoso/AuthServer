@@ -8,6 +8,7 @@ namespace jwt_identity_api.Data
         [Required]
         [StringLength(60)]
         public string? Name { get; set; }
+        
         [Required]
         public UserStatus UserStatus { get; set; }
 

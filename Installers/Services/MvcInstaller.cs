@@ -108,7 +108,7 @@ namespace jwt_identity_api.Installers.Models
     {
         public void InstallServices(IServiceCollection services, IConfiguration configuration)
         {
-            //throw new NotImplementedException();
+            services.AddHttpClient();
         }
     }
 }
