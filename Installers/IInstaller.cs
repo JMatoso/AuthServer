@@ -1,10 +1,12 @@
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-
 namespace jwt_identity_api.Installers
 {
-    public interface IInstaller
+    public interface IServiceInstaller
     {
         void InstallServices(IServiceCollection services, IConfiguration configuration);
+    }
+
+    public interface IExtensionInstaller
+    {
+        void InstallExtensions(WebApplication app);
     }
 }

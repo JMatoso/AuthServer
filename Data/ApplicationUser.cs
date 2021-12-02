@@ -6,14 +6,28 @@ namespace jwt_identity_api.Data
     public class ApplicationUser : IdentityUser
     {
         [Required]
-        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
-        public string FirstName { get; set; }
+        [StringLength(60)]
+        public string? Name { get; set; }
+        [Required]
+        public UserStatus UserStatus { get; set; }
 
         [Required]
-        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
-        public string LastName { get; set; }
+        public string? Role { get; set; }
+
+        public string? FacebookId { get; set; }
+
+        public bool IsThirtyUser { get; set; }
+
+        public bool HasPasswordChanged { get; set; }
 
         [Required]
-        public string Role { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime Created { get; set; }
+    }
+
+    public enum UserStatus
+    {
+        Blocked = 1,
+        Active = 2
     }
 }
