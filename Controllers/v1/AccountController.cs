@@ -87,7 +87,7 @@ namespace jwt_identity_api.Controllers.v1
                     NormalizedUserName = userRequest.Email?.ToUpper(),
                     LockoutEnabled = false,
                     SecurityStamp = Guid.NewGuid().ToString(),
-                    Role = Seed.Roles[2],
+                    Role = Seed.Roles[1],
                     IsThirtyUser = false,
                     HasPasswordChanged = false,
                     Created = DateTime.Now
