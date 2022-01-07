@@ -1,7 +1,7 @@
 # JWT-IdentityApi
 
 <h2>About</h2>
-<p>Authentication API using Json Web Token (JWT), Facebook Graph API, Apple Graph API and AspNetCore Identity.</p>
+<p>Authentication API using Json Web Token (JWT), Facebook Graph API, Apple OAuth and AspNetCore Identity.</p>
 <p>Custom Logs using Serilog.</p>
 <p>Documented using Swagger UI.</p>
 
