@@ -1,4 +1,4 @@
-# JWT-IdentityApi
+# Auth Server
 
 <h2>About</h2>
 <p>Authentication API using Json Web Token (JWT), Facebook Graph API, Apple OAuth and AspNetCore Identity.</p>
